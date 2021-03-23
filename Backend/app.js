@@ -29,12 +29,19 @@
       });
 
 
+  // Routers
 
-  app.get("/", (req, res) => {
-      res.json({
-          msg: 'Vicky'
-      })
-  });
+
+
+
+
+  //   app.get("/", (req, res) => {
+  //       res.json({
+  //           msg: 'Vicky'
+  //       })
+  //   });
+
+
 
   app.listen(port, () => {
       console.log("Server started");
