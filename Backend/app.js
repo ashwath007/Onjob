@@ -16,6 +16,13 @@
   app.use(cookieParser());
   app.use(cors());
 
+  //imports HERE ***********************************
+  const authRoutes = require("./routes/auth");
+  //*********************************************** */
+
+
+
+
   //DB Connection
   mongoose
       .connect(process.env.DATABASE, {
@@ -30,7 +37,7 @@
 
 
   // Routers
-
+  app.use("/onjob/api", authRoutes)
 
 
 
